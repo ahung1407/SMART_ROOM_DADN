@@ -6,6 +6,7 @@
 #include <string.h>
 #include <time.h>
 #include <LiquidCrystal_I2C.h>
+#include <config.h>
 
 LiquidCrystal_I2C lcd(0x21, 16, 2);
 
@@ -17,16 +18,6 @@ LiquidCrystal_I2C lcd(0x21, 16, 2);
 
 // #define WIFI_SSID     "binbin"
 // #define WIFI_PASSWORD "0906640081"
-
-#define WIFI_SSID     "binbin"
-#define WIFI_PASSWORD "0906640081"
-
-#define FIREBASE_HOST "smart-room-810fd-default-rtdb.asia-southeast1.firebasedatabase.app"
-#define FIREBASE_AUTH "AIzaSyBu3Br-fMu3D2OW2YvjAsk3fLHh6VPzDvQ"
-#define API_KEY "AIzaSyBu3Br-fMu3D2OW2YvjAsk3fLHh6VPzDvQ"
-#define USER_EMAIL "hungminh09065@gmail.com"
-#define USER_PASSWORD "2211367"
-#define PROJECT_ID "smart-room-810fd"
 
 FirebaseData firebaseData;
 FirebaseJson json;
