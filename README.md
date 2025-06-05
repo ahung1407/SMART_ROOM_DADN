@@ -32,7 +32,7 @@ Firebase_ESP_Client
 
 Installation
 
-Clone the Repository:git clone https://github.com/your-username/smart-room-monitoring.git
+Clone the Repository:git clone https://github.com/ahung1407/SMART_ROOM_DADN
 
 
 Install Libraries:
