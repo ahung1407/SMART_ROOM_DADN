@@ -27,7 +27,6 @@ Adafruit_NeoPixel
 DHT20 (by DFRobot)
 LiquidCrystal_I2C
 Firebase_ESP_Client
-LittleFS (if using .env file)
 
 
 
@@ -43,17 +42,14 @@ Search for and install the required libraries listed above.
 
 
 Configure Credentials:
-Create a config.h file (or upload a .env file to the ESP32 filesystem if using LittleFS).
-Add your WiFi and Firebase credentials as shown in the provided .env template or config.h file.
+Create a config.h file in the project directory.
+Copy the content from the provided config.h template (or customize it with your WiFi and Firebase credentials).
+Ensure config.h is added to your .gitignore to avoid committing sensitive data.
 
 
 Upload the Code:
 Open main.cpp in the Arduino IDE.
 Upload the code to your ESP32 board.
-
-
-Upload the .env File (if using LittleFS):
-Use the ESP32 Sketch Data Upload tool to upload the .env file to the filesystem.
 
 
 
@@ -73,8 +69,7 @@ candel_power_for_led: 0–100 (brightness percentage)
 Project Structure
 
 main.cpp: Main code for the ESP32.
-config.h: Configuration file for WiFi and Firebase credentials (alternative to .env).
-.env: Environment file for storing credentials (if using LittleFS).
+config.h: Configuration file for WiFi and Firebase credentials.
 DHT20.cpp/DHT20.h: DHT20 sensor library files.
 README.md: This file.
 
